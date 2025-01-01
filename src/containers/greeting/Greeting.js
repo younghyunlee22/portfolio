@@ -42,7 +42,7 @@ export default function Greeting() {
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a
-                    href={require("./resume.pdf")}
+                    href={greeting.resumeLink}
                     download="Resume.pdf"
                     className="download-link-button"
                   >
@@ -53,14 +53,15 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
+            <div
+              className="profile-div"
+              style={{margin: "100px", paddingLeft: "20px"}}
+            >
               <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
+                alt="profile_picture"
+                src="https://www.youngleehankorean.com/static/media/teacherpic.0870c81517fe6b032d7e.png"
               ></img>
-            )}
+            </div>
           </div>
         </div>
       </div>
