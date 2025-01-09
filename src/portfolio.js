@@ -3,6 +3,9 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
+import * as icons from "./assets/images/icons";
+import awsbadge from "./assets/images/aws_badge.png";
+import madhacks from "./assets/images/madhacks.png";
 
 // Summary And Greeting Section
 
@@ -38,70 +41,112 @@ const skillsSection = {
   title: "Skills",
   subTitle: "",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    // emoji(
+    //   "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+    // ),
+    // emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    // emoji(
+    //   "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+    // )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
-  softwareSkills: [
+  languages: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "HTML",
+      iconPath: icons.html
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "CSS",
+      iconPath: icons.css
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      iconPath: icons.javascript
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "TypeScript",
+      iconPath: icons.typescript
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Python",
+      iconPath: icons.python
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "C++",
+      iconPath: icons.cpp
+    }
+  ],
+
+  frameworks: [
+    {
+      skillName: "React.js",
+      iconPath: icons.react
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "Redux",
+      iconPath: icons.redux
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "Next.js",
+      iconPath: icons.nextjs
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "Node.js",
+      iconPath: icons.nodejs
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "Express.js",
+      iconPath: icons.express
+    },
+
+    {
+      skillName: "Bootstrap",
+      iconPath: icons.bootstrap
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "Sass",
+      iconPath: icons.sass
+    }
+  ],
+  others: [
+    {
+      skillName: "MongoDB",
+      iconPath: icons.mongodb
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "PostgreSQL",
+      iconPath: icons.postgresql
+    },
+    {
+      skillName: "Jest",
+      iconPath: icons.jest
+    },
+    {
+      skillName: "Git",
+      iconPath: icons.git
+    },
+    {
+      skillName: "GitHub",
+      iconPath: icons.github
+    },
+    {
+      skillName: "GitHub Actions",
+      iconPath: icons.githubActions
+    },
+    {
+      skillName: "Postman",
+      iconPath: icons.postman
+    },
+    {
+      skillName: "Linux",
+      iconPath: icons.linux
+    },
+    {
+      skillName: "AWS",
+      iconPath: icons.aws
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -113,23 +158,101 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Purdue University Northwest",
+      // logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "Bachelor of Science - BS, Computer Science",
+      duration: "Expected: May 2027",
+      desc: "Dual admission",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        // "Clubs: Coding Ninjas, Cyber Gladiators, Women in Cybersecurity",
+        // "Participated in NCL Fall 2024 Team Game - Rank: 247 / 4894 which is 74th percentile overall",
+        // "Got awarded a scholarship to attend Women in CyberSecurity (WiCyS) 2025 Conference"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Ivy Tech Community College",
+      // logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "Associate of Science in Computer Science",
+      duration: "7/2023 - Present",
+      desc: "GPA: 4.0/4.0",
+      descBullets: [
+        "Clubs: Coding Ninjas, Cyber Gladiators, Women in Cybersecurity",
+        "Achieved 74th percentile (Rank: 247/4894) in NCL Fall 2024 Team Game.",
+        "Awarded a scholarship to attend the Women in CyberSecurity (WiCyS) 2025 Conference."
+      ]
+    },
+    {
+      schoolName: "Per Scholas",
+      // logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "Software Engineering Bootcamp",
+      duration: "10/2023 - 02/2024",
+      desc: "Graduated as the valedictorian from the full-time Software Engineering immersion program",
+      descBullets: [
+        "Core Concepts: Version control & Agile methodologies, HTML, CSS, and JavaScript, Node, and REST API with Express, React, Redux, TypeScript, MongoDB, Mongoose, CI/CD"
+      ]
+    },
+    {
+      schoolName: "CodePath",
+      // logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "Intro to Software Engineering",
+      duration: "6/2023 - 8/2023",
+      desc: "Completed SE101 course covering foundational topics such as conditionals, loops, big O notation, hashmaps, strings, arrays, and recursion.",
+      descBullets: ["taught in Python Programming Language"]
+    },
+    {
+      schoolName: "Hankuk University of Foreign Studies",
+      // logo: require("./assets/images/stanfordLogo.png"),
+      subHeader:
+        "Bachelor of Arts in French Studes, minor in Business Administration",
+      duration: "",
+      desc: "",
+      descBullets: []
+    }
+  ],
+  experience: [
+    {
+      schoolName: "Software Engineer",
+      // logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: (
+        <a
+          href="https://youngleehankorean.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Youngleehan Korean Language School
+        </a>
+      ),
+      duration: "5/2023 - Present",
+      desc: "",
+      descBullets: [
+        "Managed an agile team of engineers across various locations to ensure efficient and timely project delivery.",
+        "Developed and deployed backend systems for accounts, checkout, and product management features, ensuring seamless user experiences and robust functionality.",
+        "Integrated a payment system and implemented the delivery of digital products.",
+        "Tech Stack: AWS S3, AWS IAM, Braintree, MongoDB, Node.js, Express, React, Vercel"
+      ]
+    },
+    {
+      schoolName: "Business Owner",
+      // logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "Youngleehan Korean Language School",
+      duration: "7/2019 - Present",
+      desc: "",
+      descBullets: [
+        "Recruited and managed 7 teachers, and communicated with 37 students from various time zones.",
+        "Developed curriculum and teaching materials that enhanced student engagement"
+      ]
+    },
+    {
+      schoolName: "Korean Language Tutor",
+      // logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "HANA Center - Chicago",
+      duration: "7/2019 - 12/2023",
+      desc: "",
+      descBullets: [
+        "Developed curriculum and teaching materials, such as handouts, study materials, or quizzes",
+        "Provided feedback to students, using positive reinforcement techniques to encourage, motivate, or build confidence in students",
+        "Expanded from 2 classes to 4, taught 200+ students"
+      ]
     }
   ]
 };
@@ -199,7 +322,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
@@ -233,56 +356,33 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Awards and Certifications"),
+  subtitle: "",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Hackathon 3rd Place Winner",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Participated in a 24-hour in-person hackathon hosted by MadHacks at the University of Wisconsin-Madison, with 55 projects submitted by 260 hackers. Developed an AI-powered skin cancer screening app and secured 3rd place as a team of 2.",
+      image: madhacks,
+      imageAlt: "MadHacks Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "Submission",
+          url: "https://devpost.com/software/detective-mole"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "AWS Certified Cloud Practitioner",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Earners of this certification have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge. Badge owners are able to identify essential AWS services necessary to set up AWS-focused projects. - AWS",
+      image: awsbadge,
+      imageAlt: "AWS CCP Badge",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Credential",
+          url: "https://www.credly.com/badges/10fcfe31-e01e-465b-8191-81498ef4cf1a/linked_in_profile"
         }
       ]
     }
@@ -311,7 +411,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -330,7 +430,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -343,7 +443,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section

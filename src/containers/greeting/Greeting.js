@@ -60,6 +60,7 @@ export default function Greeting() {
               <img
                 alt="profile_picture"
                 src="https://www.youngleehankorean.com/static/media/teacherpic.0870c81517fe6b032d7e.png"
+                style={{borderRadius: "6px"}}
               ></img>
             </div>
           </div>
