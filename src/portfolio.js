@@ -15,7 +15,7 @@ const illustration = {
 
 const greeting = {
   username: "Claire",
-  title: "Hello, I'm Claire Younghyun Lee",
+  title: "Hello, I'm Younghyun Lee",
   subTitle: emoji(
     "A passionate full-stack developer with hands-on experience in developing web applications using React, Redux, TypeScript, Node.js, and AWS. Strong problem solver with a commitment to learning and growing in a collaborative environment."
   ),
