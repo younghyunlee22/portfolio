@@ -5,6 +5,16 @@ import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
+  const GetDescBullets = ({descBullets}) => {
+    return descBullets
+      ? descBullets.map((item, i) => (
+          <li key={i} className="subTitle">
+            {item}
+          </li>
+        ))
+      : null;
+  };
+
   function openUrlInNewTab(url) {
     if (!url) {
       return;
@@ -65,6 +75,11 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
+                    <div className="education-card-container">
+                      <ul>
+                        <GetDescBullets descBullets={project.descBullets} />
+                      </ul>
+                    </div>
                     {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {

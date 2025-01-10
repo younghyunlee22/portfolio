@@ -6,7 +6,6 @@ import emoji from "react-easy-emoji";
 import * as icons from "./assets/images/icons";
 import awsbadge from "./assets/images/aws_badge.png";
 import madhacks from "./assets/images/madhacks.png";
-
 // Summary And Greeting Section
 
 const illustration = {
@@ -15,7 +14,7 @@ const illustration = {
 
 const greeting = {
   username: "Claire",
-  title: "Hello, I'm Younghyun Lee",
+  title: "Hello, I'm Claire Younghyun Lee",
   subTitle: emoji(
     "A passionate full-stack developer with hands-on experience in developing web applications using React, Redux, TypeScript, Node.js, and AWS. Strong problem solver with a commitment to learning and growing in a collaborative environment."
   ),
@@ -323,28 +322,95 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/bookdo.png"),
+      projectName: "Bookstore Website",
+      projectDesc: "Group project",
+      descBullets: [
+        "Integrated secure user authentication using Passport.js.",
+        "Enhanced performance by 80% through pagination and dynamic ordering in the backend.",
+        "Developed comprehensive unit tests using Jest, ensuring code quality and reliability.",
+        "Tech Stack: React, Next.js, TypeScript, Redux, PostgreSQL, Node.js, Express, Jest, Swagger"
+      ],
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "GitHub",
+          url: "https://github.com/BookDo7starsTS"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/detective.png"),
+      projectName: "Detective Mole",
+      projectDesc: "Hackathon project",
+      descBullets: [
+        "Developed an AI-powered web application enabling users to upload mole images for early-stage skin cancer sreening, predicting likelihood across categories such as benign keratosis-like lesions, melanoma, basal cell carcinoma, and vascular lesions.",
+        "Built a responsive and user-friendly front-end interface to streamline image uploads, display predictive results.",
+        "Tech Stack: Python, Teachable Machine, Node.js, Express, React, TailWindCSS"
+      ],
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "GitHub",
+          url: "https://github.com/orgs/2024MadHacks/repositories"
+        },
+        {
+          name: "Demo",
+          url: "https://detectivemole.netlify.app/"
+        },
+        {
+          name: "Prototype",
+          url: "https://huggingface.co/spaces/2024madhacks/mole_class"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/pod.png"),
+      projectName: "PodStamps Website",
+      projectDesc: "Individual capstone project",
+      descBullets: [
+        "Designed and implemented OAuth authentication and authorizations.",
+        "Utilized Spotify APIs to access resources and various functionalities including controls for saving and playing moments in podcast episodes.",
+        "Tech Stack: MongoDB, Node.js, Express, React"
+      ],
+      footerLink: [
+        {
+          name: "GitHub Frontend",
+          url: "https://github.com/younghyunlee22/PodStamps_frontend"
+        },
+        {
+          name: "GitHub Backend",
+          url: "https://github.com/younghyunlee22/PodStamps_backend"
+        },
+        {
+          name: "Demo",
+          url: "https://podstamps.netlify.app/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/pad.png"),
+      projectName: "PadForward Website",
+      projectDesc: "Hackathon Project",
+      descBullets: [
+        "Developed a non-profit platform which processed donation payments, products and volunteer registrations.",
+        "Implemented a location-driven experience for requests using Google Maps API.",
+        "Tech Stack: MongoDB, Node.js, Express, React"
+      ],
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/The-Powerpuff-Girls-Hackathon/Pad-Forward"
+        },
+        {
+          name: "Demo",
+          url: "https://padforward.us/"
+        },
+        {
+          name: "Submission",
+          url: "https://devpost.com/software/pad-forward"
         }
       ]
     }
