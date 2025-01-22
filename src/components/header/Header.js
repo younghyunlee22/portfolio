@@ -46,14 +46,14 @@ function Header() {
               <a href="#skills">Skills</a>
             </li>
           )}
-          <li>
+          {/* <li>
             <a href="#education">Education</a>
           </li>
           {viewExperience && (
             <li>
               <a href="#experience">Experiences</a>
             </li>
-          )}
+          )} */}
           {viewOpenSource && (
             <li>
               <a href="#projects">Projects</a>
@@ -74,14 +74,14 @@ function Header() {
               <a href="#talks">Talks</a>
             </li>
           )} */}
-          {viewResume && (
+          {/* {viewResume && (
             <li>
               <a href="#resume">Resume</a>
             </li>
-          )}
-          <li>
+          )} */}
+          {/* <li>
             <a href="#contact">Contact Me</a>
-          </li>
+          </li> */}
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a>

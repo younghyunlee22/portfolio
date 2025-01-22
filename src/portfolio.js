@@ -16,10 +16,9 @@ const greeting = {
   username: "Claire",
   title: "Hello, I'm Claire Younghyun Lee",
   subTitle: emoji(
-    "A passionate full-stack developer with hands-on experience in developing web applications using React, Redux, TypeScript, Node.js, and AWS. Strong problem solver with a commitment to learning and growing in a collaborative environment."
+    "A passionate full-stack developer with hands-on experience in developing web applications using React.js, Next.js, Redux, TypeScript, Node.js, and AWS. Strong problem solver with a commitment to learning and growing in a collaborative environment."
   ),
-  resumeLink:
-    "https://drive.google.com/uc?export=download&id=1PfqgKhxqjcZLjNd-JhwMDJvWJ7o6FMSp", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -28,7 +27,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/younghyunlee22",
   linkedin: "https://www.linkedin.com/in/younghyun-lee-yhl/",
-  gmail: "younghyunlee22@gmail.com",
+  // gmail: "younghyunlee22@gmail.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -523,8 +522,8 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "Let's get connected! I am just a message away.",
-  email_address: "younghyunlee22@gmail.com"
+  subtitle: "Let's get connected! I am just a message away."
+  // email_address: "younghyunlee22@gmail.com"
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
